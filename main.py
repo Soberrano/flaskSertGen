@@ -10,17 +10,8 @@ app.config.from_object(Config)
 
 @app.route('/', methods=['GET', 'POST'])
 def hello():
-  form = sertForm()
   name = ""
-  if form.validate_on_submit():
-      name = form.name.data
-      patronymic = form.name.data
-      status = form.name.data
-      kvant = form.name.data
-      mod = form.name.data
-      hour = form.name.data
-      number = form.name.data
-  return render_template('index.html',download = f"Download{name}", form = form)
+  return render_template('index.html',download = f"Download{name}")
 
 
 
