@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block head %}
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<link rel="stylesheet" href="{{ url_for('static',filename='styles/styleForm.css') }}">
+{% endblock %}
+
+{% block content %}
+<h1>Создать один</h1>
+<div class="container">
+    <div class="cta-form">
+        <h2>Fill out the form!</h2>
+        <p>Check out the comments for line by line explanations. Form-related code starts on line 145.</p>
+    </div>
+
+    <form action="singleSert" method="post" class="form">
+        {{ form.csrf_token }}
+        <p>{{ form.name.label(class_="form__label" ) }} {{ form.name(class_="form__input") }}</p>
+        <p>{{ form.sname.label(class_="form__label") }} {{ form.sname(class_="form__input") }}</p>
+        <p>{{ form.patronymic.label(class_="form__label") }} {{ form.patronymic(class_="form__input") }}</p>
+        <p>{{ form.status.label(class_="form__label") }} {{ form.status(class_="form__input") }}</p>
+        <p>{{ form.kvant.label(class_="form__label") }} {{ form.kvant(class_="form__input") }}</p>
+        <p>{{ form.mod.label(class_="form__label") }} {{ form.mod(class_="form__input") }}</p>
+        <p>{{ form.hour.label(class_="form__label") }} {{ form.hour(class_="form__input") }}</p>
+        <p>{{ form.number.label(class_="form__label") }} {{ form.number(class_="form__input") }}</p>
+        <p>{{ form.kvantbool.label(class_="form__label") }} {{ form.kvantbool(class_="form__input") }}{{ form.cube.label }} {{ form.cube(class_="form__input") }}</p>
+        <input type="submit" >
+    </form>
+</div>
+
+{% endblock %}
+
+

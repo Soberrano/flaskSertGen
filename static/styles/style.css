@@ -1,0 +1,333 @@
+#sertPng {
+    height: 780px;
+    width: 1119px;
+}
+
+div#tekst_sverhu_kartinki {
+    position: relative;
+}
+
+.fi {
+
+    position: absolute;
+    top: 30%;
+    left: 600px;
+    text-transform: uppercase;
+    color: rgb(111, 154, 181);
+    width: 400px;
+    padding: 10px;
+    text-align: center;
+    font: bold 30px/34px Helvetica, Sans-Serif;
+}
+.thName {
+
+    position: absolute;
+    top: 35%;
+    left: 620px;
+    text-transform: uppercase;
+    color: rgb(111, 154, 181);
+    width: 350px;
+    padding: 10px;
+    text-align: center;
+    font: bold 30px/34px Helvetica, Sans-Serif;
+}
+.textDate {
+
+    position: absolute;
+    top: 41%;
+    left: 620px;
+    color: rgba(0, 0, 0, 0.652);
+    width: 350px;
+    padding: 10px;
+    text-align: center;
+    font:  15px Montserrat, Sans-Serif;
+}
+
+.textStand {
+
+    position: absolute;
+    top: 45%;
+    left: 620px;
+    color: rgba(0, 0, 0, 0.652);
+    width: 350px;
+    padding: 10px;
+    text-align: center;
+    font:  17px Montserrat, Sans-Serif;
+}
+.textKvant {
+
+    position: absolute;
+    top: 54%;
+    left: 620px;
+    color: rgba(0, 0, 0, 0.652);
+    width: 350px;
+    padding: 10px;
+    text-align: center;
+    font:  20px Montserrat, Sans-Serif;
+}
+.textModul {
+
+    position: absolute;
+    top: 58%;
+    left: 620px;
+    color: rgba(0, 0, 0, 0.652);
+    width: 350px;
+    padding: 10px;
+    text-align: center;
+    font:  20px Montserrat, Sans-Serif;
+}
+.time {
+    position: absolute;
+    top: 65%;
+    left: 350px;
+    color: rgba(0, 0, 0, 0.652);
+    width: 350px;
+    padding: 10px;
+    text-align: center;
+    font:  20px Montserrat, Sans-Serif;
+}
+.numb {
+    position: absolute;
+    top: 94%;
+    left: 10px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.652);
+    width: 350px;
+    padding: 10px;
+    text-align: center;
+    font: bold 16px Montserrat,Sans-Serif;
+}
+
+
+
+
+.example-1 .form-group {
+    padding: 0;
+    margin-left: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.example-1 input[type=file] {
+    outline: 0;
+    opacity: 0;
+    pointer-events: none;
+    user-select: none
+}
+
+.example-1 .label {
+    width: 120px;
+    border: 2px dashed #fff;
+    border-radius: 5px;
+    display: block;
+    padding: 1.2em;
+    transition: border 300ms ease;
+    cursor: pointer;
+    text-align: center
+}
+
+.example-1 .label i {
+    display: block;
+    font-size: 42px;
+    padding-bottom: 16px
+}
+
+.example-1 .label i, .example-1 .label .title {
+    color: #fff;
+    transition: 200ms color
+}
+
+.example-1 .label:hover {
+    border: 2px solid #000
+}
+
+.example-1 .label:hover i, .example-1 .label:hover .title {
+    color: #000
+}
+
+
+.btn{
+
+
+
+
+
+
+    width: 140px;
+    color: #591BC5;
+    font-size: 17px;
+    border:1px solid #EFEEF5;
+    font-weight: 500;
+    background: #EFEEF5;
+    border-radius: 20px;
+    padding: 10px;
+    cursor:pointer;
+    transition: .3s;
+    margin-left: auto;
+  margin-right: auto;
+}
+.btn:hover{
+    border-radius: 2;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Exo', sans-serif;
+    z-index: 9999;
+}
+.btn-par{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.context {
+    width: 100%;
+    position: absolute;
+    top:50vh;
+
+
+}
+
+.context h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+.context form {
+    text-align: center;
+    color: #fff;
+
+}
+
+
+.area{
+    background: #4e54c8;
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+    width: 100%;
+    height:100vh;
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
