@@ -1,3 +1,6 @@
+import os
+import platform
+import subprocess, sys
 from flask import Flask, request, render_template
 import pandas as pd
 
@@ -21,6 +24,7 @@ def data():
         file = request.form['upload-file']
         data = pd.read_excel(file)
         download = sertGeneratorList(data,'kvant')
+        open_folder(r'uploads')
         return render_template('index.html',download = download)
 
 
@@ -40,10 +44,17 @@ def singleSert():
         if form.kvantbool.data and form.cube.data:
             return render_template('index.html')
         sertGeneratorSingle(name,sname,patronymic,status,kvant,mod,hour,number,podr)
+        open_folder(r'uploads')
     return render_template('data.html', form = form)
 
 
 
+def open_folder(file_path):
+    if platform.system() == "Windows":
+        os.startfile(file_path)
+    else:
+        opener = "open" if sys.platform == "darwin" else "xdg-open"
+        subprocess.call([opener, file_path])
 
 
 if __name__ == '__main__':

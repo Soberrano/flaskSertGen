@@ -10,7 +10,7 @@ class sertForm(FlaskForm):
   kvant = StringField('Направление', validators=[DataRequired()])
   mod = SelectField('модуль', choices=[('базовый модуль', 'базовый модуль'), ('угулбленный модуль', 'угулбленный модуль'),('проектный модуль','проектный модуль')])
   hour = StringField('длительность программы', validators=[DataRequired()])
-  number = StringField('номер сертификата', validators=[DataRequired()])
+  number = StringField('номер сертификата')
   kvantbool = BooleanField('Кванториум')
   cube = BooleanField('IT-Cube')
   submit = SubmitField('Создать')
