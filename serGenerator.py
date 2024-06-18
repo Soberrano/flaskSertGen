@@ -8,6 +8,7 @@ font = ImageFont.truetype("fonts/RussoOne-Regular.ttf", 70)
 fontSmall = ImageFont.truetype('fonts/Roboto-Light.ttf', 35)
 
 def sertGeneratorList(data, kvantOrCube):
+    text_color = (84, 150, 155)
     name1_list = data["name1"].tolist()
     name2_list = data["name2"].tolist()
     patronymic_list = data["patronymic"].tolist()
@@ -52,6 +53,8 @@ def sertGeneratorList(data, kvantOrCube):
         name = name1_list[i] + " " + name2_list[i]
         if type(number_list[i]) == float:
             number_list[i] = ""
+        if type(patronymic_list[i]) == float:
+            patronymic_list[i] = ""
 
         # определяете объект для рисования
         draw = ImageDraw.Draw(img2)
